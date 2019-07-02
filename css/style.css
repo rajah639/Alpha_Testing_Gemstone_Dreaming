@@ -326,6 +326,9 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1rem; }
 
+.name {
+  display: inline-block; }
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300; }
@@ -3279,7 +3282,11 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
-
+  @media (max-width: 600px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3409,6 +3416,8 @@ input[type="button"].btn-block {
       flex-basis: auto; }
     .navbar-expand-md .navbar-toggler {
       display: none; } }
+
+@media (max-width: 420)
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
@@ -7319,6 +7328,7 @@ h1, h2, h3, h4, h5,
       top: 0;
       padding: 10px 15px; } }
   .ftco-navbar-light .navbar-brand {
+    font-weight: 400;
     color: #000; }
     .ftco-navbar-light .navbar-brand span {
       color: #dd7035;
@@ -7553,6 +7563,7 @@ h1, h2, h3, h4, h5,
       .hero-wrap .slider-text h1 span {
         color: #000; }
     .hero-wrap .slider-text h2 {
+      color: #f4f4f4;
       font-weight: 500; }
     .hero-wrap .slider-text .typewrite > .wrap {
       position: relative;
