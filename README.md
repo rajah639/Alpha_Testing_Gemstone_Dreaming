@@ -15,10 +15,10 @@ Included
 * change the count up thing to something else
 * Text holder in the same tone as our site for blogs
 * Fix Latest stone
-* Center Responsive Menu 
+* ~~Center Responsive Menu~~
 * 
 <h2>Things done.</h2>
 
-* ~~Change navigation container overlay
+* ~~Change navigation container overlay~~
 * ~~Get rid of the membership section for now
 * ~~Change navigation highlight color.
