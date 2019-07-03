@@ -3341,12 +3341,12 @@ input[type="button"].btn-block {
     }
   @media (max-width: 414px){
     .navbar-toggler{
-      padding-left: 39%;
+      padding-left: 49%;
     }
   }
   @media (max-width: 321px) {
     .navbar-toggler {
-      padding-left: 35%;
+      padding-left: 50%;
     }
   }
 
