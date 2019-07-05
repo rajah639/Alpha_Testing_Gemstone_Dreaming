@@ -3346,7 +3346,7 @@ input[type="button"].btn-block {
   }
   @media (max-width: 321px) {
     .navbar-toggler {
-      padding-left: 50%;
+      padding-left: 40%;
     }
   }
 
