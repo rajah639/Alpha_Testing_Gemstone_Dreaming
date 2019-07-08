@@ -61,8 +61,29 @@
           <span class="wrap"></span>
         </h1>
       -->
-        <h2 class="mb-5">Welcome to Gemstone Dreaming</h2>
+        <h2 class="mb-5" id="hidden">Welcome to Gemstone Dreaming</h2>
+        <button class="open-button btn btn-primary p-3 px-4" onclick="openForm()" id="btn-hide">Subscribe</button>
+        <div class="form-popup" id="myForm">.
+          <form action="/action_page.php" class="form-container">
+            <h1 class="email-sub">Email Subscribe</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+
+            <label for="name"><b>Name</b></label>
+            <input type="first-name" placeholder="Please enter your name" name="name" required>
+
+            <label for="dob"><b>Date of birth</b><label>
+            <input type="dob" placeholder="Date of birth" name="dob" required>
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+  <!--
         <p><a href="#" class="btn btn-primary p-3 px-4">Remember to Subscribe!</a></p>
+      -->
       </div>
     </div>
   </div>
@@ -138,7 +159,7 @@
   </div>
 </section>
 -->
-<section class="ftco-section">
+<section class="ftco-section hide">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-12 heading-section ftco-animate text-center">
@@ -306,7 +327,7 @@
 </section>
 -->
 
-<section class="ftco-section testimony-section">
+<section class="ftco-section testimony-section hide">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
@@ -427,7 +448,7 @@
   </div>
 </section>
 
-<section class="ftco-counter ftco-bg-dark img" id="section-counter" style="background-image: url(images/Gemstone/stones_special_stone_pure_minerals_semi_precious_stones_pebble-970797.jpeg);" data-stellar-background-ratio="0.75">
+<section class="ftco-counter ftco-bg-dark img hide" id="section-counter" style="background-image: url(images/Gemstone/stones_special_stone_pure_minerals_semi_precious_stones_pebble-970797.jpeg);" data-stellar-background-ratio="0.75">
   <div class="overlay"></div>
   <div class="container">
     <div class="row justify-content-center">
@@ -471,7 +492,7 @@
   </div>
 </section>
 
-<section class="ftco-section bg-light">
+<section class="ftco-section bg-light hide">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
@@ -541,7 +562,7 @@
   </div>
 </section>
 
-<section class="ftco-gallery ftco-section">
+<section class="ftco-gallery ftco-section hide">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-3">
       <div class="col-md-7 heading-section ftco-animate text-center">
@@ -584,7 +605,7 @@
 
 
 
-<footer class="ftco-footer ftco-section img">
+<footer class="ftco-footer ftco-section img hide">
   <div class="overlay"></div>
   <div class="container">
     <div class="row mb-5">
@@ -634,6 +655,22 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<script>
+function openForm() {
+  $('#myForm').css('display', 'block');
+  $('#ftco-navbar').css('display', 'none');
+  $('#hidden').css('display', 'none');
+  $('#btn-hide').css('display', 'none');
+  $('.hide').css('display', 'none');
+}
 
+function closeForm() {
+  $('#myForm').css('display', 'none');
+  document.getElementById("ftco-navbar").style.display = "block";
+  document.getElementById("hidden").style.display = "block";
+  document.getElementById("btn-hide").style.display = "inline-block";
+  $('.hide').css('display', 'block');
+}
+</script>
 </body>
 </html>
